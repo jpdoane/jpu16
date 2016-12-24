@@ -1,0 +1,318 @@
+Addr  | Code
+------------------------------------------------------
+0     | 		movi    $3,GRIDXY       # get the address of the array
+1     | 		nand	$3,$3,$3		# make 3 negative first by bit-wise not
+2     | 		addi	$3,$3,1			# then adding 1
+3     | 		lw		$5,$0,max		# get the total size on the grid
+4     | 		add		$5,$5,$3		# add in the grid offset
+5     | 		sw		$5,$0,max		# save our 'quit program' cut-off
+6     | begin:	addi    $4,$0,17			# load 17 into r4 [y]
+7     | 		movi	$3,GRIDXY		# load the addrss of the GRID
+8     | 		add    	$4,$4,$3         # now at row1 column1
+9     | loop1:  addi    $2,$0,14			# we are 14 columns wide
+10    | loop2:  lw		$5,$4,1			# load GRID[x+1,y]
+11    | 		add     $6,$5,$0			# save it in r6
+12    | 		lw		$5,$4,-1		# load GRID[x-1],y
+13    | 		add 	$6,$6,$5		# add it into r6
+14    | 		lw		$5,$4,-16		# load GRID[x,y-1]
+15    | 		add		$6,$6,$5		# add it into r6
+16    | 		lw 		$5,$4,16		# load GRID[x,y+1]
+17    | 		add		$6,$6,$5		# add it into r6
+18    | 		movi	$5,div_4		# address of divide by 4 routine
+19    | 		jalr	$1,$5			# call it
+20    | 		sw		$7,$4,0			# store returned average in GRID[x][y]
+21    | 		addi	$4,$4,1			# increment pointer
+22    | 		addi	$2,$2,-1		# decrement counter
+23    | 		beq		$2,$0,done		# have we done 14 yet?
+24    | 		beq		$0,$0,loop2		# if not keep looping
+25    | done:	lui		$1,32768		# highest bit [and test lui]
+26    | 		lw		$5,$0,max		# load maximum value to watch for
+27    | 		add		$5,$5,$4		# add to offset
+28    | 		nand	$5,$5,$1		# mask for top bit [negative]
+29    | 		nand	$5,$5,$5		# invert to get an and
+30    | 		beq		$5,$0,done2		# if negative, we are done
+31    | 		addi	$4,$4,2			# otherwise move to next row
+32    | 		beq		$0,$0,loop1		# and re-loop
+33    | done2:  lw		$5,$0,count		# load the iteration count
+34    | 		addi	$5,$5,-1		# decrement it
+35    | 		sw		$5,$0,count		# store it back
+36    | 		beq		$5,$0,done3		# are we done?
+37    | 		beq		$0,$0,begin		# if not re-start the loop
+38    | done3:	halt					# Game Over
+39    | R1:     .fill 0					# Area to back-up registers if they
+40    | R2:     .fill 0					# Will be overwritten in function calls
+41    | R3:     .fill 0
+42    | count:	.fill 35					# 2 iterations
+43    | max:	.fill -237				# cut-off for end of array
+44    | div_4:	sw		$2,$0,R2		# back up r2
+45    | 		sw		$3,$0,R3		# back up r3
+46    | 		addi	$7,$0,0			# r7=0
+47    | 		addi	$5,$0,1			# r5=1 ( 0000 0000 0000 0001 b)
+48    | 		addi	$2,$0,4			# r2=4 ( 0000 0000 0000 0100 b)
+49    | loop7:	nand	$3,$6,$2		# mask our input vs *4 bit
+50    | 		nand    $3,$3,$3		# bitwise-not the result
+51    | 		beq		$3,$0,loop9		# if zero, that bit not set
+52    | 		add		$7,$7,$5		# if not, add the /4 mask
+53    | loop9:	add		$5,$5,$5		# shift /4 mask left
+54    | 		add		$2,$2,$2		# shift *4 mask left
+55    | 		beq		$2,$0,done9		# if *4 has overflown, we are done
+56    | 		beq		$0,$0,loop7		# if not keep looping
+57    | done9:	lw		$2,$0,R2		# restore r2
+58    | 		lw		$3,$0,R3		# restore r3
+59    | 		jalr	$0,$1			# return to address in r1
+60    | GRIDXY:	.fill 5000
+61    | 	.fill 5000
+62    | 	.fill 5000
+63    | 	.fill 5000
+64    | 	.fill 5000
+65    | 	.fill 5000
+66    | 	.fill 5000
+67    | 	.fill 5000
+68    | 	.fill 5000
+69    | 	.fill 5000
+70    | 	.fill 5000
+71    | 	.fill 5000
+72    | 	.fill 5000
+73    | 	.fill 5000
+74    | 	.fill 5000
+75    | 	.fill 5000
+76    | 	.fill 3000
+77    | 	.fill 0
+78    | 	.fill 0
+79    | 	.fill 0
+80    | 	.fill 0
+81    | 	.fill 0
+82    | 	.fill 0
+83    | 	.fill 0
+84    | 	.fill 0
+85    | 	.fill 0
+86    | 	.fill 0
+87    | 	.fill 0
+88    | 	.fill 0
+89    | 	.fill 0
+90    | 	.fill 0
+91    | 	.fill 6000
+92    | 	.fill 3000
+93    | 	.fill 0
+94    | 	.fill 0
+95    | 	.fill 0
+96    | 	.fill 0
+97    | 	.fill 0
+98    | 	.fill 0
+99    | 	.fill 0
+100   | 	.fill 0
+101   | 	.fill 0
+102   | 	.fill 0
+103   | 	.fill 0
+104   | 	.fill 0
+105   | 	.fill 0
+106   | 	.fill 0
+107   | 	.fill 6000
+108   | 	.fill 3000
+109   | 	.fill 0
+110   | 	.fill 0
+111   | 	.fill 0
+112   | 	.fill 0
+113   | 	.fill 0
+114   | 	.fill 0
+115   | 	.fill 0
+116   | 	.fill 0
+117   | 	.fill 0
+118   | 	.fill 0
+119   | 	.fill 0
+120   | 	.fill 0
+121   | 	.fill 0
+122   | 	.fill 0
+123   | 	.fill 6000
+124   | 	.fill 3000
+125   | 	.fill 0
+126   | 	.fill 0
+127   | 	.fill 0
+128   | 	.fill 0
+129   | 	.fill 0
+130   | 	.fill 0
+131   | 	.fill 0
+132   | 	.fill 0
+133   | 	.fill 0
+134   | 	.fill 0
+135   | 	.fill 0
+136   | 	.fill 0
+137   | 	.fill 0
+138   | 	.fill 0
+139   | 	.fill 6000
+140   | 	.fill 3000
+141   | 	.fill 0
+142   | 	.fill 0
+143   | 	.fill 0
+144   | 	.fill 0
+145   | 	.fill 0
+146   | 	.fill 0
+147   | 	.fill 0
+148   | 	.fill 0
+149   | 	.fill 0
+150   | 	.fill 0
+151   | 	.fill 0
+152   | 	.fill 0
+153   | 	.fill 0
+154   | 	.fill 0
+155   | 	.fill 6000
+156   | 	.fill 3000
+157   | 	.fill 0
+158   | 	.fill 0
+159   | 	.fill 0
+160   | 	.fill 0
+161   | 	.fill 0
+162   | 	.fill 0
+163   | 	.fill 0
+164   | 	.fill 0
+165   | 	.fill 0
+166   | 	.fill 0
+167   | 	.fill 0
+168   | 	.fill 0
+169   | 	.fill 0
+170   | 	.fill 0
+171   | 	.fill 6000
+172   | 	.fill 3000
+173   | 	.fill 0
+174   | 	.fill 0
+175   | 	.fill 0
+176   | 	.fill 0
+177   | 	.fill 0
+178   | 	.fill 0
+179   | 	.fill 0
+180   | 	.fill 0
+181   | 	.fill 0
+182   | 	.fill 0
+183   | 	.fill 0
+184   | 	.fill 0
+185   | 	.fill 0
+186   | 	.fill 0
+187   | 	.fill 6000
+188   | 	.fill 3000
+189   | 	.fill 0
+190   | 	.fill 0
+191   | 	.fill 0
+192   | 	.fill 0
+193   | 	.fill 0
+194   | 	.fill 0
+195   | 	.fill 0
+196   | 	.fill 0
+197   | 	.fill 0
+198   | 	.fill 0
+199   | 	.fill 0
+200   | 	.fill 0
+201   | 	.fill 0
+202   | 	.fill 0
+203   | 	.fill 6000
+204   | 	.fill 3000
+205   | 	.fill 0
+206   | 	.fill 0
+207   | 	.fill 0
+208   | 	.fill 0
+209   | 	.fill 0
+210   | 	.fill 0
+211   | 	.fill 0
+212   | 	.fill 0
+213   | 	.fill 0
+214   | 	.fill 0
+215   | 	.fill 0
+216   | 	.fill 0
+217   | 	.fill 0
+218   | 	.fill 0
+219   | 	.fill 6000
+220   | 	.fill 3000
+221   | 	.fill 0
+222   | 	.fill 0
+223   | 	.fill 0
+224   | 	.fill 0
+225   | 	.fill 0
+226   | 	.fill 0
+227   | 	.fill 0
+228   | 	.fill 0
+229   | 	.fill 0
+230   | 	.fill 0
+231   | 	.fill 0
+232   | 	.fill 0
+233   | 	.fill 0
+234   | 	.fill 0
+235   | 	.fill 6000
+236   | 	.fill 3000
+237   | 	.fill 0
+238   | 	.fill 0
+239   | 	.fill 0
+240   | 	.fill 0
+241   | 	.fill 0
+242   | 	.fill 0
+243   | 	.fill 0
+244   | 	.fill 0
+245   | 	.fill 0
+246   | 	.fill 0
+247   | 	.fill 0
+248   | 	.fill 0
+249   | 	.fill 0
+250   | 	.fill 0
+251   | 	.fill 6000
+252   | 	.fill 3000
+253   | 	.fill 0
+254   | 	.fill 0
+255   | 	.fill 0
+256   | 	.fill 0
+257   | 	.fill 0
+258   | 	.fill 0
+259   | 	.fill 0
+260   | 	.fill 0
+261   | 	.fill 0
+262   | 	.fill 0
+263   | 	.fill 0
+264   | 	.fill 0
+265   | 	.fill 0
+266   | 	.fill 0
+267   | 	.fill 6000
+268   | 	.fill 3000
+269   | 	.fill 0
+270   | 	.fill 0
+271   | 	.fill 0
+272   | 	.fill 0
+273   | 	.fill 0
+274   | 	.fill 0
+275   | 	.fill 0
+276   | 	.fill 0
+277   | 	.fill 0
+278   | 	.fill 0
+279   | 	.fill 0
+280   | 	.fill 0
+281   | 	.fill 0
+282   | 	.fill 0
+283   | 	.fill 6000
+284   | 	.fill 3000
+285   | 	.fill 0
+286   | 	.fill 0
+287   | 	.fill 0
+288   | 	.fill 0
+289   | 	.fill 0
+290   | 	.fill 0
+291   | 	.fill 0
+292   | 	.fill 0
+293   | 	.fill 0
+294   | 	.fill 0
+295   | 	.fill 0
+296   | 	.fill 0
+297   | 	.fill 0
+298   | 	.fill 0
+299   | 	.fill 6000
+300   | 	.fill 3000
+301   | 	.fill 10000
+302   | 	.fill 10000
+303   | 	.fill 10000
+304   | 	.fill 10000
+305   | 	.fill 10000
+306   | 	.fill 10000
+307   | 	.fill 10000
+308   | 	.fill 10000
+309   | 	.fill 10000
+310   | 	.fill 10000
+311   | 	.fill 10000
+312   | 	.fill 10000
+313   | 	.fill 10000
+314   | 	.fill 10000
+315   | 	.fill 6000

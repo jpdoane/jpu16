@@ -1,0 +1,8 @@
+# Ignore the JPU directory...
+JPU/*
+
+#except for the actual vhdl files
+!JPU/vhdl/
+
+#ignore vscode files
+JPUasm/.vscode
