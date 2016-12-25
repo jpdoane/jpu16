@@ -1,8 +1,11 @@
-# Ignore the JPU directory...
+*.json
+
+#ignore all xilinx files except essential project files
 JPU/*
-
-#except for the actual vhdl files
-!JPU/vhdl/
-
-#ignore vscode files
-JPUasm/.vscode
+!JPU/vhdl/*
+!JPU/JPU.xise
+!JPU/JPU.wcfg
+!JPU/ipcore_dir/
+JPU/ipcore_dir/*
+!JPU/ipcore_dir/blockram.xco
+!JPU/ipcore_dir/blockram.xise

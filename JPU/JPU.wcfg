@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Jon/Development/JPU/JPU/testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="common_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbench" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/sint" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sint</obj_property>
+      <obj_property name="ObjectShortName">sint</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/reg_file1/sregisters" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sregisters[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sregisters[7:0]</obj_property>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[7]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[6]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[5]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[4]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[3]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[2]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[1]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/spc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">spc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">spc[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/sinstructionfetch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sinstructionfetch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sinstructionfetch[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/svalidfetch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">svalidfetch</obj_property>
+      <obj_property name="ObjectShortName">svalidfetch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/svaliddecodeout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">svaliddecodeout</obj_property>
+      <obj_property name="ObjectShortName">svaliddecodeout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/svalidaluin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">svalidaluin</obj_property>
+      <obj_property name="ObjectShortName">svalidaluin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/sbranchaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sbranchaddr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sbranchaddr[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/control1/sbranchen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sbranchen</obj_property>
+      <obj_property name="ObjectShortName">sbranchen</obj_property>
+   </wvobject>
+   <wvobject fp_name="group211" type="group">
+      <obj_property name="label">Mem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbench/control1/svalidmem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">svalidmem</obj_property>
+         <obj_property name="ObjectShortName">svalidmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultmem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultmem[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sresultmem[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultwriteenmem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultwriteenmem</obj_property>
+         <obj_property name="ObjectShortName">sresultwriteenmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemaddrmem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">smemaddrmem[11:0]</obj_property>
+         <obj_property name="ObjectShortName">smemaddrmem[11:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sregwriteselmem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sregwriteselmem[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sregwriteselmem[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemreadenmem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemreadenmem</obj_property>
+         <obj_property name="ObjectShortName">smemreadenmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemwriteenmem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemwriteenmem</obj_property>
+         <obj_property name="ObjectShortName">smemwriteenmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemen</obj_property>
+         <obj_property name="ObjectShortName">smemen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemwriteen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemwriteen</obj_property>
+         <obj_property name="ObjectShortName">smemwriteen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemen</obj_property>
+         <obj_property name="ObjectShortName">smemen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemwriteen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemwriteen</obj_property>
+         <obj_property name="ObjectShortName">smemwriteen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/svalidmem_c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">svalidmem_c</obj_property>
+         <obj_property name="ObjectShortName">svalidmem_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemreadenmem_c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemreadenmem_c</obj_property>
+         <obj_property name="ObjectShortName">smemreadenmem_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemwriteenmem_c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemwriteenmem_c</obj_property>
+         <obj_property name="ObjectShortName">smemwriteenmem_c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemaddrmem_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">smemaddrmem_c[11:0]</obj_property>
+         <obj_property name="ObjectShortName">smemaddrmem_c[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultmem_c" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultmem_c[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sresultmem_c[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sdatafrommem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdatafrommem[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sdatafrommem[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultmem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultmem[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sresultmem[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group123" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbench/control1/svalidaluin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">svalidaluin</obj_property>
+         <obj_property name="ObjectShortName">svalidaluin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/svalidaluout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">svalidaluout</obj_property>
+         <obj_property name="ObjectShortName">svalidaluout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/iopcode" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">iopcode[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iopcode[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sdataaalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdataaalu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sdataaalu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sdatabalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdatabalu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sdatabalu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sdatacalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sdatacalu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sdatacalu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/simmshortalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">simmshortalu[6:0]</obj_property>
+         <obj_property name="ObjectShortName">simmshortalu[6:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/simmlongalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">simmlongalu[9:0]</obj_property>
+         <obj_property name="ObjectShortName">simmlongalu[9:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/spcalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spcalu[11:0]</obj_property>
+         <obj_property name="ObjectShortName">spcalu[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/spcinc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">spcinc[11:0]</obj_property>
+         <obj_property name="ObjectShortName">spcinc[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultalu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sresultalu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sresultwriteenalu" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sresultwriteenalu</obj_property>
+         <obj_property name="ObjectShortName">sresultwriteenalu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sregwriteselalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sregwriteselalu[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sregwriteselalu[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemaddralu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">smemaddralu[11:0]</obj_property>
+         <obj_property name="ObjectShortName">smemaddralu[11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemreadenalu" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemreadenalu</obj_property>
+         <obj_property name="ObjectShortName">smemreadenalu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/smemwriteenalu" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">smemwriteenalu</obj_property>
+         <obj_property name="ObjectShortName">smemwriteenalu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/idataa" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">idataa[15:0]</obj_property>
+         <obj_property name="ObjectShortName">idataa[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/idatab" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">idatab[15:0]</obj_property>
+         <obj_property name="ObjectShortName">idatab[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/idatac" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">idatac[15:0]</obj_property>
+         <obj_property name="ObjectShortName">idatac[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/alu1/sabeq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sabeq</obj_property>
+         <obj_property name="ObjectShortName">sabeq</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group198" type="group">
+      <obj_property name="label">RegFile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbench/control1/reg_file1/iclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">iclk</obj_property>
+         <obj_property name="ObjectShortName">iclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/irst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">irst</obj_property>
+         <obj_property name="ObjectShortName">irst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/iwriteen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">iwriteen</obj_property>
+         <obj_property name="ObjectShortName">iwriteen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/iwritesel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">iwritesel[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iwritesel[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/idatawrite" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">idatawrite[15:0]</obj_property>
+         <obj_property name="ObjectShortName">idatawrite[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/iregsela" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">iregsela[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iregsela[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/odataa" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">odataa[15:0]</obj_property>
+         <obj_property name="ObjectShortName">odataa[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/iregselb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">iregselb[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iregselb[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/odatab" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">odatab[15:0]</obj_property>
+         <obj_property name="ObjectShortName">odatab[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/iregselc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">iregselc[2:0]</obj_property>
+         <obj_property name="ObjectShortName">iregselc[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/odatac" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">odatac[15:0]</obj_property>
+         <obj_property name="ObjectShortName">odatac[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/reg_file1/sregisters" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sregisters[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sregisters[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[7]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[7]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[6]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[6]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[5]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[5]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[4]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[4]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[3]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[3]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[2]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[1]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testbench/control1/reg_file1/sregisters[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">sregisters[0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group227" type="group">
+      <obj_property name="label">Hazards</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testbench/control1/sregwriteselalu" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sregwriteselalu[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sregwriteselalu[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sregwriteselmem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sregwriteselmem[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sregwriteselmem[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw1a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw1a</obj_property>
+         <obj_property name="ObjectShortName">sraw1a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw1b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw1b</obj_property>
+         <obj_property name="ObjectShortName">sraw1b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw1c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw1c</obj_property>
+         <obj_property name="ObjectShortName">sraw1c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw2a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw2a</obj_property>
+         <obj_property name="ObjectShortName">sraw2a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw2b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw2b</obj_property>
+         <obj_property name="ObjectShortName">sraw2b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw2c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw2c</obj_property>
+         <obj_property name="ObjectShortName">sraw2c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral1a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral1a</obj_property>
+         <obj_property name="ObjectShortName">sral1a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral1b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral1b</obj_property>
+         <obj_property name="ObjectShortName">sral1b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral1c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral1c</obj_property>
+         <obj_property name="ObjectShortName">sral1c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral2a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral2a</obj_property>
+         <obj_property name="ObjectShortName">sral2a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral2b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral2b</obj_property>
+         <obj_property name="ObjectShortName">sral2b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral2c" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral2c</obj_property>
+         <obj_property name="ObjectShortName">sral2c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/srala" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">srala</obj_property>
+         <obj_property name="ObjectShortName">srala</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sralb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sralb</obj_property>
+         <obj_property name="ObjectShortName">sralb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sralc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sralc</obj_property>
+         <obj_property name="ObjectShortName">sralc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw1possible" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw1possible</obj_property>
+         <obj_property name="ObjectShortName">sraw1possible</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sraw2possible" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sraw2possible</obj_property>
+         <obj_property name="ObjectShortName">sraw2possible</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral1possible" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral1possible</obj_property>
+         <obj_property name="ObjectShortName">sral1possible</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sral2possible" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sral2possible</obj_property>
+         <obj_property name="ObjectShortName">sral2possible</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstallral" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstallral</obj_property>
+         <obj_property name="ObjectShortName">sstallral</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstall_fetch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstall_fetch</obj_property>
+         <obj_property name="ObjectShortName">sstall_fetch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstall_decode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstall_decode</obj_property>
+         <obj_property name="ObjectShortName">sstall_decode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstall_alu" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstall_alu</obj_property>
+         <obj_property name="ObjectShortName">sstall_alu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstall_mem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstall_mem</obj_property>
+         <obj_property name="ObjectShortName">sstall_mem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testbench/control1/sstall_rw" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sstall_rw</obj_property>
+         <obj_property name="ObjectShortName">sstall_rw</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

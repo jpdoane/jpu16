@@ -24,6 +24,7 @@ end control;
 
 architecture arch of control is
 
+
 --------------
 -- decoder
 --------------
