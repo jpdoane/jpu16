@@ -3,8 +3,8 @@
 #ignore all xilinx files except essential project files
 *.pdf
 JPU/*
+!JPU/vhdl
 !JPU/*.pptx
-!JPU/vhdl/*
 !JPU/JPU.xise
 !JPU/JPU.wcfg
 !JPU/ipcore_dir/
