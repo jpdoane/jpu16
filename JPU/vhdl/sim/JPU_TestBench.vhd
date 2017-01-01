@@ -15,7 +15,7 @@ END testbench;
 
 ARCHITECTURE arch OF testbench IS 
 
-component control
+component JPUcontrol
     port (
     iClk                : in std_logic;
     iRst                : in std_logic;
@@ -36,7 +36,7 @@ begin
 
 
 
-control1: control port map
+control1: JPUcontrol port map
 	(
     iClk => clk,
     iRst => rst,

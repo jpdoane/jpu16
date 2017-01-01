@@ -1,7 +1,9 @@
 *.json
 
 #ignore all xilinx files except essential project files
+*.pdf
 JPU/*
+!JPU/*.pptx
 !JPU/vhdl/*
 !JPU/JPU.xise
 !JPU/JPU.wcfg
